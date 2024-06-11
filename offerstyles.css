@@ -1,0 +1,218 @@
+.container {
+    margin: 0 auto;
+    box-sizing: border-box;
+    }
+    
+    /* Smartphones (portait and landscape )----------  */
+    
+    @media screen and (min-width: 767px)  {
+    .container {
+    width: 100%;
+    padding: 5px 10px;
+    }
+       }
+    
+    /* tablets , iPads (portait and landscape )----------  */
+    
+    @media screen and (min-width: 768px) and (max-width: 1024px)  {
+    
+    .container {
+    width: 750px;
+    padding: 5px 10px;
+    }
+    }
+    /* Low resolution Desktops and laptops ----------  */
+    
+    @media screen and (min-width: 1024px)  {
+    .container {
+    width: 980px;
+    padding: 5px 15px;
+    }
+    }
+    
+    /* High  resolution Desktops and laptops ----------  */
+    
+    @media screen and (min-width: 1280px)  {
+    .container {
+    width: 1200px;
+    padding: 5px 20px;
+    }
+    }
+    body , html {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    }            
+    #bg-video{
+        position: fixed;
+        top:50%;
+        left:50%;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+        transform: translate(-50%,-50%);
+        margin-bottom: 50%;
+            }
+            
+    
+            .video-container {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                z-index: -1;
+                margin-bottom: 50%;
+            }
+    
+            /* CSS for styling the navigation menu */
+            nav {
+                margin-top: 10px;
+                background-color:black;
+               color: white;
+                padding: 10px;
+                padding-top: 1px;
+                font-weight: 300;
+            }
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 15px;
+            }
+            nav ul li {
+                display: inline;
+                margin-right: 15px;
+                float:centre;
+                color: black;
+            }
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+            }
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
+            .content{
+                margin-right: 100px;
+            }
+            
+             h1{
+        
+                 color:white;
+                 font-style:oblique;
+                text-align: center;
+                font-style:italic;
+            }
+            p{
+                font-family:'courier new',courier,monospace;
+                 font-family:small;
+            }
+            
+                 .centretext{
+                    text-align:center;
+                    font-size:xxx-large;
+                    color:white;
+                    padding-top: 100px;
+                 }.centretext h1 {
+                    text-align:center;
+                    font-size:xxx-large;
+                    color:white;
+                    padding-top: 300px;
+                 }
+                 body{
+                    h1{
+                        color:white;
+                        font-style: italic;
+                    }
+                 }
+
+                 main{
+                 .content  nav {
+                    background-color: black;
+                    color: white;
+                    padding: 10px;
+                    padding-top: 1px;
+                    margin-top: 100px;
+                    margin-bottom: 70px;
+                 text-align: right;
+                 padding-right:1px ;
+                margin-right: 10px;
+                }
+                nav ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 15px;
+            
+                }
+                nav ul li {
+                    display: inline;
+                    margin-right: 15px;
+                    float:centre;
+                    padding-left:80px;
+                }
+                nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                }
+                nav ul li a:hover {
+                    text-decoration: underline;
+                }
+                .content{
+                    margin-right: 100px;
+                    padding-right: 50px;
+                }
+            }
+            .content h1{
+                margin-top:300px;
+              color:black;
+            }
+            .card{
+                height: 100%;
+                width: 100%;
+                background-color:white;
+                display: flex;
+                padding: 4vw;
+                flex-wrap: wrap;
+            
+            
+              }
+              .box{
+                background-color: grey;
+                height: 20vw;
+                width: 25vw;
+                margin-top: 3vw;
+                margin-right: 4vw; 
+              }
+              img{
+                height: 14vw;
+                width: 25vw;
+                
+              }
+              .contact{
+                color:white;
+                padding:90px;
+                padding-top: 600px;
+                padding: left 50px;
+              }
+             
+            .login{
+                background-color:rgba(240, 248, 255, 0.473);
+                padding: 5vw;
+            }
+            .error {
+                color: red;
+            }
+            .logo {
+                max-width: 100px;
+                height: auto;
+            }
+            .text{
+                color:white;
+                text-align: center;
+            }
+    
+
+
+
+
+

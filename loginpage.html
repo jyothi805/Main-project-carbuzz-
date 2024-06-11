@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elogin</title>
+    <style>
+     h1{
+        color:white;
+        font-style:oblique ;
+     }   
+       
+    .main{
+        
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 3vw;
+        margin-left: 17vw;
+        margin-right: 17vw;
+        margin-bottom: 3vw;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bolder;
+
+    }
+    .login{
+        background-color:rgba(240, 248, 255, 0.473);
+        padding: 5vw;
+    }
+    button{
+        width: 10vw;
+        border-radius: 3vw
+    }
+    #bg-video{
+    position: fixed;
+    top:50%;
+    left:50%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background-size: cover;
+    height: auto;
+    width: auto;
+    transform: translate(-50%,-50%);
+}
+nav {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            padding-top: 3px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 15px;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+            float:right;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .content{
+            margin-right: 100px;
+        }
+    </style>
+</head>
+<script>
+    // User Validations
+function loginValidation() {
+        // Ramesh
+var uname = document.myform.username.value;
+         //Ramesh@123
+var password = document.myform.password.value;
+        if(uname==null || uname=="") {
+          alert("Name cant be blank")
+          return false;  
+       } else if (password.length<6){
+          alert("Password Must be 6 letters")
+          return false;
+       }  
+       return true                 
+    }   
+ </script>
+<body>
+    <center>
+        <h1>CARBUZZZ</h1>
+        <center>
+    <nav>
+        <ul>
+        <li><a href="contactpage.html">CONTACT US</a></li>
+        <li><a href="loginpage.html">LOGIN</a></li>
+        <li><a href="offerpage.html">OFFERS</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="sold.html">SOLD</a></li>
+         <li><a href="homepage.html">HOME</a></li>
+        </ul>
+    </nav>
+    <video autoplay muted loop id="bg-video">
+        <source src="carvideo.mp4" type="video/mp4">
+        your browser doesn't support HTML5 video.
+        </video>
+        <div class="main">
+            <form name="myform" action="LoginSuccess.html" 	onsubmit="return loginValidation(this)">
+        
+                <div class="login" >
+                    <h1 style="display: flex; justify-content: center; flex-direction: row; margin-top: 4%;">login here!</h1><br>
+                <h3>Enter your login credintials</h3><br>
+            
+                    
+                <font size:"3"> Username :<input type="text" placeholder="*username/email" name="username"><br> </font size> <br>
+                
+                <font size:"3"> Password :<input type="password" placeholder="*password" name="password"><br></font size><br>
+                <button>login</button><br>
+                 <br>
+                 <br>
+                <a href="eregistration.html">Not registered? Create an account</a></form>
+            </div>
+            </div></body>
+            </form>
+        </body>
+       </html>

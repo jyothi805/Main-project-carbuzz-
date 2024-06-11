@@ -1,0 +1,207 @@
+
+.container {
+margin: 0 auto;
+background: hsl(154, 94%, 37%);
+box-sizing: border-box;
+}
+
+/* Smartphones (portait and landscape )----------  */
+
+@media screen and (min-width: 767px)  {
+.container {
+width: 100%;
+padding: 5px 10px;
+}
+   }
+
+/* tablets , iPads (portait and landscape )----------  */
+
+@media screen and (min-width: 768px) and (max-width: 1024px)  {
+
+.container {
+width: 750px;
+padding: 5px 10px;
+}
+}
+
+
+/* Low resolution Desktops and laptops ----------  */
+
+@media screen and (min-width: 1024px)  {
+.container {
+width: 980px;
+padding: 5px 15px;
+}
+}
+
+/* High  resolution Desktops and laptops ----------  */
+
+@media screen and (min-width: 1280px)  {
+.container {
+width: 1200px;
+padding: 5px 20px;
+}
+}
+body , html {
+margin: 0;
+height: 100%;
+padding: 0;
+}
+#bg-video{
+    position: fixed;
+    top:50%;
+    left:50%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+ background-size: cover;
+    transform: translate(-50%,-50%);
+        }
+        
+
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        /* CSS for styling the navigation menu */
+        nav {
+            background-color:white;
+            color:black;
+            padding: 10px;
+            padding-top: 3px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 15px;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+            float:right;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .content{
+            margin-right: 100px;
+        }
+        body{
+        background-color:cover;
+        }
+         h1{
+    
+             color:white;
+             font-style:oblique;
+            text-align: center;
+            font-style:italic;
+        }
+        p{
+            font-family:'courier new',courier,monospace;
+             font-family:small;
+        }
+        .abc9{
+                 width: 400px;
+                 height: 100px;
+                 background: url("C:\Users\neeli\Downloads\multi.jpeg");
+                 background:linear-gradient(to right,rgba(179,175,175,0),rgb(255, 255, 255)),url("C:\Users\neeli\Downloads\multi.jpeg")
+             }
+             .centretext{
+                text-align:center;
+                font-size:xxx-large;
+                color:white;
+                font-weight: 300;
+                padding-top: 120px;
+             }
+             .selection{
+                color:red;
+                transition:3s;
+                
+             }
+             .main{
+                color:white;
+                padding: 10px;;
+                text-align: left;
+             }
+             .footer .box-container{
+                display: flex;
+                gap:1.5rem;
+                flex-wrap: wrap;
+              }
+              
+              .footer .box-container .box{
+                padding:1rem 0;
+                flex:1 1 25rem;
+              }
+              
+              .footer .box-container .box .share a{
+                padding:0;
+                height:4rem;
+                width:4rem;
+                line-height: 4rem;
+                text-align: center;
+              }
+              
+              .footer .box-container .box h3{
+                font-size: 2.5rem;
+                color:var(--black);
+              }
+              
+              .footer .box-container .box p{
+                font-size: 1.3rem;
+                color:#666;
+                padding:.7rem 0;
+              }
+              
+              .footer .box-container .box .links{
+                padding:1rem 0;
+              }
+              
+              .footer .box-container .box .links a{
+                display: block;
+                padding:.5rem 0;
+                font-size: 1.7rem;
+                color:#333;
+              }
+              
+              .footer .box-container .box .links a:hover{
+                text-decoration: underline;
+                color:var(--green);
+              }
+              
+              .footer .credit{
+                padding:2.5rem 1rem;
+                border-top: .1rem solid rgba(0,0,0,.1);
+                margin-top: 1rem;
+                text-align: center;
+                font-size: 2rem;
+              }
+              
+              .footer .credit span{
+                color:var(--green);
+              }
+              .carbuzz{
+                background-color:rgba(240, 248, 255, 0.473);
+margin-right:350px;
+margin-left: 350px;
+color:#333;
+padding-bottom: 15px;
+              }
+              @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');              
+            .about-us{
+              background-color:rgba(240, 248, 255, 0.473);
+margin-right:300px;
+margin-left: 300px;
+padding: 3vw;
+padding-bottom: 15px;
+            }

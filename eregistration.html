@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="regstyles.css">
+<title>Registration Form</title>
+</head>
+<body><center>
+ <centre>
+  <h1>CARBUZZZ</h1>
+  <center>
+<nav>
+  <ul>
+  <li><a href="contactpage.html">CONTACT US</a></li>
+  <li><a href="loginpage.html">LOGIN</a></li>
+  <li><a href="offerpage.html">OFFERS</a></li>
+  <li><a href="gallery.html">GALLERY</a></li>
+  <li><a href="sold.html">SOLD</a></li>
+   <li><a href="homepage.html">HOME</a></li>
+  </ul>
+</nav>
+<video autoplay muted loop id="bg-video">
+  <source src="carvideo.mp4" type="video/mp4">
+  your browser doesn't support HTML5 video.
+  </video>
+  <div class="register">
+<h2>Registration Form</h2>
+<form id="registrationForm" action="#" method="post">
+    <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName">
+        <span id="firstNameError" class="error"></span>
+    </div><br>
+    <div>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName">
+        <span id="lastNameError" class="error"></span>
+    </div><br>
+    <div>
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile">
+        <span id="mobileError" class="error"></span>
+    </div><br>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span id="emailError" class="error"></span>
+    </div>
+    <div><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <span id="passwordError" class="error"></span>
+    </div><br>
+    <div>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea>
+        <span id="addressError" class="error"></span>
+    </div><br>
+    <div>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <span id="genderError" class="error"></span>
+    </div><br>
+    <br>
+
+    <button type="submit"><a href="homepage.html"> Register</a></button>
+</form>
+</div>
+<script>
+    const form = document.getElementById('registrationForm');
+    const firstName = document.getElementById('firstName');
+    const lastName = document.getElementById('lastName');
+    const mobile = document.getElementById('mobile');
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+    const address = document.getElementById('address');
+    const gender = document.getElementById('gender');
+
+    form.addEventListener('submit', function(event) {
+        let valid = true;
+
+        // First Name validation
+        if (firstName.value === '') {
+            document.getElementById('firstNameError').textContent = 'First Name is required';
+            valid = false;
+        } else {
+            document.getElementById('firstNameError').textContent = '';
+        }
+
+        // Last Name validation
+        if (lastName.value === '') {
+            document.getElementById('lastNameError').textContent = 'Last Name is required';
+            valid = false;
+        } else {
+            document.getElementById('lastNameError').textContent = '';
+        }
+
+        // Mobile Number validation
+        const mobileRegex = /^[0-9]{10}$/;
+        if (!mobileRegex.test(mobile.value)) {
+            document.getElementById('mobileError').textContent = 'Enter a valid 10-digit mobile number';
+            valid = false;
+        } else {
+            document.getElementById('mobileError').textContent = '';
+        }
+
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email.value)) {
+            document.getElementById('emailError').textContent = 'Enter a valid email address';
+            valid = false;
+        } else {
+            document.getElementById('emailError').textContent = '';
+        }
+
+        // Password validation
+        if (password.value === '') {
+            document.getElementById('passwordError').textContent = 'Password is required';
+            valid = false;
+        } else {
+            document.getElementById('passwordError').textContent = '';
+        }
+
+        // Address validation
+        if (address.value === '') {
+            document.getElementById('addressError').textContent = 'Address is required';
+            valid = false;
+        } else {
+            document.getElementById('addressError').textContent = '';
+        }
+
+        // Gender validation
+        if (gender.value === '') {
+            document.getElementById('genderError').textContent = 'Gender is required';
+            valid = false;
+        } else {
+            document.getElementById('genderError').textContent = '';
+        }
+
+        if (!valid) {
+            event.preventDefault(); // Prevent form submission if validation fails
+        }
+    });
+</script>
+
+</body></center>
+</html>
